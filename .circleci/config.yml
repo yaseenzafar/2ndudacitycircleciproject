@@ -8,12 +8,10 @@ jobs:
     docker:
       - image: circleci/node:latest
     steps:
-      - run: echo $Name
-# Orchestrate or schedule a set of jobs
-workflows:
-  # Name the workflow "welcome"
-  welcome:
-    jobs:
-      - Environmentjob
+      - run: 
+          name: "What is your name?"
+          command: echo $Name
+
+
     
 
