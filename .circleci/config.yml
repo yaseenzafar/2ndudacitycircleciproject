@@ -11,7 +11,11 @@ jobs:
       - run: 
           name: "What is your name?"
           command: echo $Name
-
-
+# Orchestrate or schedule a set of jobs
+workflows:
+  # Name the workflow "welcome"
+  welcome:
+    jobs:
+      - Environmentjob
     
 
